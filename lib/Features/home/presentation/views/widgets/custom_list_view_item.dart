@@ -6,10 +6,10 @@ class CustomListViewItem extends StatefulWidget {
   const CustomListViewItem({super.key});
 
   @override
-  State<CustomListViewItem> createState() => _FeaturedListViewState();
+  State<CustomListViewItem> createState() => _CustomListViewItemState();
 }
 
-class _FeaturedListViewState extends State<CustomListViewItem> {
+class _CustomListViewItemState extends State<CustomListViewItem> {
 
   @override
   Widget build(BuildContext context) {
