@@ -11,6 +11,7 @@ class CustomListViewItem extends StatefulWidget {
 
 class _CustomListViewItemState extends State<CustomListViewItem> {
 
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -23,7 +24,7 @@ class _CustomListViewItemState extends State<CustomListViewItem> {
             clipBehavior: Clip.hardEdge,
           child: SvgPicture.asset(
         AssetsInfo.book1,
-        fit: BoxFit.fill,)
+        fit: BoxFit.fill,),
         ),
       ),
     );

@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: const SplashView(),
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor:kPrimaryColor),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: kPrimaryColor,
+        textTheme: TextTheme(),
+      ),
     );
   }
 }
