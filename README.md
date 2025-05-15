@@ -1,4 +1,4 @@
-# bookly
+# BookStore
 
 A new Flutter project.
 
