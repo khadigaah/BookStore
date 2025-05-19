@@ -10,9 +10,9 @@ abstract class Styles {
 
 
   static const titleSmall = TextStyle(
-    fontSize: 30,
+    fontSize: 16,
     fontWeight: FontWeight.normal,
-    color: Color(0xFFF7F7F7),
+    color: Colors.white70,
     fontFamily: kGtSectraFine,
   );
 
