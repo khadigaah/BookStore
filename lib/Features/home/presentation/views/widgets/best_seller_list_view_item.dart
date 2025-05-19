@@ -1,3 +1,4 @@
+import 'package:bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
@@ -40,24 +41,7 @@ class BestSellerListViewItem extends StatelessWidget {
               Text('J.K. Rowling',
               style: Styles.titleSmall,
               ),
-              Row(
-                children: [
-                Text('19.99 €',
-                style: Styles.titleSmall16.copyWith(fontWeight: FontWeight.bold)
-                ,),
-                const SizedBox(width: 100,),
-                  const Icon(
-                  Icons.star,
-                  color: Colors.amber,
-                  size: 15,
-                  ),
-                  const Text('4.8',
-                  style: Styles.titleSmall16,),
-                  const SizedBox(width: 5,),
-                  const Text('(1234)',
-                  style: Styles.titleSmall14,)
-                ],
-              )
+            BookRating(),
          ] ),
         ],
           ),
