@@ -15,10 +15,10 @@ class _CustomListViewItemState extends State<CustomListViewItem> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-    height: MediaQuery.of(context).size.height*0.3,
+    height: MediaQuery.of(context).size.height*0.25,
       child: AspectRatio(
         aspectRatio: 2.7/4,
-        child: Container(
+        child : Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),),
             clipBehavior: Clip.hardEdge,
