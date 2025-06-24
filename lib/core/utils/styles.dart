@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 abstract class Styles {
   static const titleMedium = TextStyle(
-    fontSize: 18,
+    fontSize: 15,
     fontWeight: FontWeight.w600,
     color: Color(0xFFF7F7F7),
   );
@@ -23,12 +23,12 @@ abstract class Styles {
   );
 
   static const titleSmall14 = TextStyle(
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: FontWeight.normal,
     color: Colors.grey,
   );
   static const titleSmall16 = TextStyle(
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: FontWeight.w600,
     color: Colors.white,
   );

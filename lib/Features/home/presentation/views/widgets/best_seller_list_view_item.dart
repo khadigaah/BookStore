@@ -25,7 +25,7 @@ class BestSellerListViewItem extends StatelessWidget {
               ),
           ),
         ),
-        const SizedBox(width: 25,),
+        const SizedBox(width: 20,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,7 +37,7 @@ class BestSellerListViewItem extends StatelessWidget {
             style: Styles.titleMedium,),
             ),
             const SizedBox(
-              height: 1,),
+              height: 0,),
               Text('J.K. Rowling',
               style: Styles.titleSmall,
               ),

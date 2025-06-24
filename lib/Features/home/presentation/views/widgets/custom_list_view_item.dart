@@ -23,7 +23,7 @@ class _CustomListViewItemState extends State<CustomListViewItem> {
             borderRadius: BorderRadius.circular(20),),
             clipBehavior: Clip.hardEdge,
           child: SvgPicture.asset(
-        AssetsInfo.book1,
+        AssetsInfo.book3,
         fit: BoxFit.fill,),
         ),
       ),
