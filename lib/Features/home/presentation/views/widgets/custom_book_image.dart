@@ -16,10 +16,10 @@ class _CustomBookImageState extends State<CustomBookImage> {
   Widget build(BuildContext context) {
     return SizedBox(
       child: AspectRatio(
-        aspectRatio: 2.7/4,
+        aspectRatio: 2.6/4,
         child : Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),),
+            borderRadius: BorderRadius.circular(10),),
             clipBehavior: Clip.hardEdge,
           child: SvgPicture.asset(
         AssetsInfo.book3,
