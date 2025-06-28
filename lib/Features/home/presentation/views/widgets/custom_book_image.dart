@@ -2,20 +2,19 @@ import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomListViewItem extends StatefulWidget {
-  const CustomListViewItem({super.key});
+class CustomBookImage extends StatefulWidget {
+  const CustomBookImage({super.key});
 
   @override
-  State<CustomListViewItem> createState() => _CustomListViewItemState();
+  State<CustomBookImage> createState() => _CustomBookImageState();
 }
 
-class _CustomListViewItemState extends State<CustomListViewItem> {
+class _CustomBookImageState extends State<CustomBookImage> {
 
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-    height: MediaQuery.of(context).size.height*0.25,
       child: AspectRatio(
         aspectRatio: 2.7/4,
         child : Container(
