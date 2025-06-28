@@ -1,3 +1,4 @@
+import 'package:bookly/Features/home/presentation/views/widgets/book_action.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:bookly/core/utils/styles.dart';
@@ -51,7 +52,11 @@ class BookDetailsViewBody extends StatelessWidget {
         const Text('4.8', style: Styles.titleSmall16),
         const SizedBox(width: 5),
         const Text('(1234)', style: Styles.titleSmall14),
-          ],)
+          ],),
+          SizedBox(
+            height: 25,
+          ),
+         const BookAction(),
         ],
       ),
     );
