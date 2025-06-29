@@ -1,6 +1,6 @@
 import 'package:bookly/Features/home/presentation/views/widgets/book_action.dart';
+import 'package:bookly/Features/home/presentation/views/widgets/books_details_section.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
-import 'package:bookly/Features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:bookly/Features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
@@ -11,39 +11,16 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
-    return Padding(
+
+    return CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          child: Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         children: [
           const CustomBookDetailsAppBar(),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: width * .18,
-              vertical: 20,
-            ),
-            child: const CustomBookImage(),
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          const Text(
-            'The Jungle Book',
-            style: Styles.titleSmall30,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Opacity(
-            opacity: 0.7,
-            child: Text(
-              'Rudyard Kipling',
-              style: Styles.titleSmall16.copyWith(
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
+        const BooksDetailsSection(),
           const SizedBox(height: 10,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -58,8 +35,10 @@ class BookDetailsViewBody extends StatelessWidget {
             height: 25,
           ),
          const BookAction(),
-          SizedBox(
-            height: 30,
+        const   Expanded(
+            child: SizedBox(
+              height: 40,
+            ),
           ),
          Align(
            alignment: Alignment.centerLeft,
@@ -74,6 +53,9 @@ class BookDetailsViewBody extends StatelessWidget {
           const SizedBox(height: 5,)
         ],
       ),
+    ),
+        ),
+      ],
     );
   }
 }
