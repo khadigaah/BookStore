@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 
 abstract class Failure {
-  final String message;
-  const Failure(this.message);
+  final String errMessage;
+  const Failure(this.errMessage);
 }
 
 class ServerFailure extends Failure {
