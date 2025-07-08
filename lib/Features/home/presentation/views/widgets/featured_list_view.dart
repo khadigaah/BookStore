@@ -23,12 +23,12 @@ class _FeaturedListViewState extends State<FeaturedBookListView> {
     child: ListView.builder(
       scrollDirection: Axis.horizontal,
       physics: const BouncingScrollPhysics(),
-      itemCount: 10,
+      itemCount: state.books.length,
       itemBuilder:
-          (context, index) => const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          (context, index) => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: CustomBookImage(
-              imageUrl: '',
+              imageUrl: state.books[index].volumeInfo.imageLinks.thumbnail,
             ),
           ),
     ),

@@ -16,7 +16,7 @@ class SimailarBooksListView extends StatelessWidget {
         itemBuilder: (context, index) => const Padding(
           padding: EdgeInsets.symmetric(horizontal: 5,),
           child: CustomBookImage(
-            imageUrl: '',
+            imageUrl: 'https://cdn.create.vista.com/downloads/24aa286d-f016-4cd6-8d53-e74e814e2770_640.jpeg',
           ),
         ),
       ),
