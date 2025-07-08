@@ -2,15 +2,10 @@ import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomBookImage extends StatefulWidget {
-  const CustomBookImage({super.key});
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key, required this.imageUrl});
 
-  @override
-  State<CustomBookImage> createState() => _CustomBookImageState();
-}
-
-class _CustomBookImageState extends State<CustomBookImage> {
-
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
