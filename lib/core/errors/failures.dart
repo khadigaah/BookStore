@@ -6,7 +6,7 @@ abstract class Failure {
 }
 
 class ServerFailure extends Failure {
-  const ServerFailure(super.errMessage);
+    ServerFailure(super.errMessage);
 
   factory ServerFailure.fromDioError(DioException dioError) {
     switch (dioError.type) {
@@ -39,15 +39,16 @@ class ServerFailure extends Failure {
     }
   }
 
-  factory ServerFailure.fromResponse(int statusCode, dynamic response) {
+   factory ServerFailure.fromResponse(int? statusCode, dynamic response) {
     if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
       return ServerFailure(response['error']['message']);
     } else if (statusCode == 404) {
-      return ServerFailure('Your Request Not Found, Try Later!');
+      return ServerFailure('Your request not found, Please try later!');
     } else if (statusCode == 500) {
-      return ServerFailure('Internal Server Error, Try Later!');
+      return ServerFailure('Internal Server error, Please try later');
     } else {
-      return ServerFailure('Opps There was an Error, Try Later!');
+      return ServerFailure('Opps There was an Error, Please try again');
     }
   }
 }
+
